@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap grid demo, 2 columns</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/pie.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/ammap_amcharts_extension.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/ammap_amcharts_extension.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+  <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet" type="text/css" />
+
+      <link rel="stylesheet" href="css/stylesectors.css">
+<script src="ammap/maps/js/uksvg_cut_2.js" type="text/javascript"></script>
+<script src="js/amcharts.js" type="text/javascript"></script> 
+<script src="js/serial.js" type="text/javascript"></script>
+<script src="js/chartbuildsectors.js"></script>
+
+<script src="js/chartdatasectors.js" type="text/javascript"></script>
+  
+</head>
+
+<body>
+
+        <div class="header-text" style="text-align: left;">
+
+            <h1>How do SME industry sectors compare?</h1>
+
+            <h2>Find your sector below to see which SMEs claimed R&D tax credits via SME R&D scheme</h2>
+
+        </div>     
+
+<br/>
+
+  <div class="container">
+    <div class="carousel carousel-nav">
+  <div id="GBUKLsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Information & Communication</h3>
+      </div>
+  </div>
+  <div id="GBUKEsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Manufacturing</h3>
+      </div>
+  </div>
+  <div id="GBUKOsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Professional, Scientific & Technical</h3>
+      </div>
+  </div>
+  <div id="GBUKIsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Wholesale & Retail Trade, Repairs</h3>
+      </div>
+  </div>
+  <div id="GBUKPsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Admin & Support Services</h3>
+      </div>
+  </div>
+  <div id="GBUKHsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Construction</h3>
+      </div>
+  </div>
+  <div id="GBUKUsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Other services activities</h3>
+      </div>
+  </div>
+  <div id="GBUKMsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Financial & Insurance</h3>
+      </div>
+  </div>
+  <div id="GBUKTsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Arts, Entertainm ent & Recreation</h3>
+      </div>
+  </div>
+  <div id="GBUKRsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Education</h3>
+      </div>
+  </div>
+  <div id="GBUKSsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Health & Social Work</h3>
+      </div>
+  </div>
+  <div id="GBUKJsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Transport & Storage</h3>
+      </div>
+  </div>
+  <div id="GBUKCsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Agriculture, Forestry, Fishing</h3>
+      </div>
+  </div>
+  <div id="GBUKGsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Water, Sewerage and Waste</h3>
+      </div>
+  </div>
+  <div id="GBUKKsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Accommodation & Food</h3>
+      </div>
+  </div>
+  <div id="GBUKNsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Real Estate</h3>
+      </div>
+  </div>
+  <div id="GBUKFsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Electricity, Gas, Steam and Air Conditioning</h3>
+      </div>
+  </div>
+  <div id="GBUKDsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Mining & Quarrying</h3>
+      </div>
+  </div>
+  <div id="GBUKQsectors" class="carousel-cell">
+      <div class="carousel-caption">
+        <h3>Public Administration, Defence & Social Services P. Education</h3>
+      </div>
+  </div>
+
+</div>
+
+  <div class="row">
+
+    <div class="col-sm-6">
+
+      <div class="modal-body">
+
+<div class="info-cover">
+<div id="infosectors">
+    <p><b>Information & Communication</b></p>
+</div>
+<div id="body-text" style="margin-left: 15px; margin-bottom: 15px; margin-right: 15px; color: #fff">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div></div>
+
+      </div>
+    </div>
+    
+    <div class="col-sm-6 other">
+
+<div class="tabsection">
+    <ul class="tabs">
+        <li class="tab-link current" id="tab-1-tab" data-tab="tab-1">Number of<br/> claims</li>
+        <li class="tab-link" data-tab="tab-2">Total Value of<br/> claims</li>
+        <li class="tab-link" id="tab-3-click" data-tab="tab-3">Average<br/> claims</li>
+    </ul>
+
+    <div id="tab-1" class="tab-content current" style="background-color: #fff">
+        <p>Number of claims</p>
+    <div id="chartdiv" class="chartdiv"></div>
+    </div>
+
+    <div id="tab-2" class="tab-content" style="background-color: #fff">
+        <p>Amount claimed £(m)</p>
+    <div id="chartdiv1sectors" class="chartdiv1sectors"></div>
+    </div>
+
+    <div id="tab-3" class="tab-content">
+      <div class="tab-3">
+        <div id="tab-3-contentsectors" class="tab-3-contentsectors">
+        <!-- LONDON VALUE PLACEHOLDER -->
+        £74,695
+        </div>
+        <div id="tab-3-inner" class="tab-3-inner">
+        <e>Average claim value for Manufacturing R&D claims in </e>
+        <br/>
+        <div class="location" id="location">Information & Communication</div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css'>
+
+      <link rel="stylesheet" href="css/stylesectors.css">
+
+  
+</head>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <script  src="js/flickity.js"></script>
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
